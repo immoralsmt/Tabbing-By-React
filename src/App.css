@@ -36,3 +36,73 @@
     transform: rotate(360deg);
   }
 }
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.tabouter {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tabtitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Tabs List */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+li button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+li button:hover {
+  background: #e0e7ff;
+  /* border-color: #8dbef1; */
+}
+
+li button.active {
+  background: #007bff;
+  color: white;
+  border-color: #8dbef1;
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+/* Tab Content */
+.tab-content {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  padding: 20px 25px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
